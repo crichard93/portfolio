@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cory Richard</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   
   <body>
@@ -12,7 +14,9 @@
       <img class="background-img" src="img/business-background.png" alt="background image">
     </div>
     <header>
-      <img class="logo-img" src="img/udacity_logo.png" height="75" width="75" alt="Udacity logo image">
+      <div class="logo-img-container">
+        <img class="logo-img" src="img/udacity_logo.png" alt="Udacity logo image">
+      </div>
       <div class="heading-container">
         <h1 class="name">
           Cory Richard
@@ -42,13 +46,9 @@
         <h4 class="project-1-text project-title">
           Python Quiz
         </h4>
-        <img class="project-1-img project-img" src="img/quiz_img.jpg" height="200" width="250" alt="project 1 image">
-
-        <!--
-        <p class="project-1-summary project-summary">
-          Test your knowledge on Python! 
-        </p>
-        -->
+        <div class="project-1-img-container project-img-container">
+          <img  class="project-1-img project-img" src="img/quiz.jpg" alt="project 1 image">
+        </div>
         <a class="project-1-link project-link" 
         href="https://github.com/crichard93/python-quiz.git" target="_blank">Test your knowledge on Python! </a>
       </article>
@@ -57,19 +57,20 @@
         <h4 class="project-2-text project-title">
           PostgresQL Report
         </h4>
-        <img class="project-2-img project-img" src="img/postgresql_img.png" height="200" width="250" alt="project 2 image">
-
+        <div class="project-2-img-container project-img-container">
+          <img  class="project-2-img project-img" src="img/psql.png" alt="project 2 image">
+        </div>
         <a class="project-2-link project-link" 
         href="https://github.com/crichard93/PostgresQL-Logs-Analysis" target="_blank">Generate an SQL report with the help of Python.</a>
-
       </article>
 
       <article class="project3 project">
         <h4 class="project-3-text project-title">
           Movie Database
         </h4>
-        <img class="project-3-img project-img" src="img/movie_img.jpg"
-        height="200" width="250" alt="project 3 image">
+        <div class="project-3-img-container project-img-container">
+          <img class="project-3-img project-img" src="img/movie.jpg" alt="project 3 image">
+        </div>
         <a class="project-3-link project-link" 
         href="https://github.com/crichard93/Movie-Website" target="_blank">Take a look at the best movies and their trailers.</a>
       </article>
@@ -77,9 +78,13 @@
 
     <footer>
       <span class="email">
-        Email: c.a.richard93@gmail.com 
+        <i class="fas fa-envelope-square"></i>
+        c.a.richard93@gmail.com
       </span>
+      <i class="fab fa-linkedin"></i>
       <a class="linkedin" href="https://www.linkedin.com/in/cory-richard-3b831671" target="_blank">LinkedIn</a>
+      <i class="fab fa-github"></i>
+      <a class="github" href="https://github.com/crichard93" target="_blank">GitHub</a>
     </footer>
   </body>
 </html>

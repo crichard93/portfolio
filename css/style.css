@@ -1,345 +1,377 @@
-body, html {
-	font-family: Arial, Verdana, Sans-serif, Serif;
-	font-size: 20px;
-	margin: 0px;
-	padding: 0px;
-	max-width: 100%;
+body,
+html {
+    font-family: Arial, Verdana, Sans-serif, Serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
 }
+
 header {
-	border-bottom: 5px solid #7d97ad;
-	margin-bottom: 5px;
-	background-color: white;
-	min-width: 100%;
+    border-bottom: 5px solid #7d97ad;
+    margin-bottom: 5px;
+    background-color: white;
+    min-width: 100%;
 }
 
 .background-img-container {
-	z-index: -1;
-	position: fixed;
-	left: 0;
-	top: 0;
-	opacity: 0.8;
-	filter: alpha(opacity=80);
-	height: 100%;
-	width: 100%;
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    height: 100%;
+    width: 100%;
 }
 
 .background-img {
-	width: 100%;
-	height: 100%;
-}
-.logo-img {
-	margin: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .name {
-	padding: 0px;
-	margin: 0px;
-	font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
 }
 
 .heading-container {
-	margin-right: 20px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	text-transform: uppercase;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
 .profile-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 30%;
+    display: block;
 }
+
 .project-img {
-	display: block;
+    width: 100%;
 }
+
 .project-link {
-	display: block;
+    display: block;
 }
 
 footer {
-	border-top: 5px solid #7d97ad;
-	width: 100%;
-	padding: 1em;
-	margin-top: 5px;
+    border-top: 5px solid #7d97ad;
+    width: 100%;
+    padding: 1em;
+    margin-top: 5px;
 
 }
 
 @media screen and (max-width: 767px) {
-	.name, .alias {
-		font-size: 15px;
-		margin: 0px;
-	}
-	header {
-		display: flex;
-		justify-content:space-between;
-		width: 100%;
-		height: 20%;
-		order: 0;
-	}
 
-	.logo-img{
-		width: 10%;
-		height: 30px;
-		order: 1;
-		margin-top: 25px;
-	}
-	.heading-container {
-		max-width:50%;
-		order:2;
-		text-align: right;
-	}
-	body {
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 100%;
-	}
+    .name,
+    .alias {
+        font-size: 15px;
+        margin: 0px;
+    }
 
-	.profile {
-		width: 100%;
-		order: 1;
-		margin: 10px;
-	}
-	.bio {
-		margin: 0;
-		padding: 5px;
-	}
+    header {
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+        height: 20%;
+        order: 0;
+    }
+    .logo-img{
+        object-fit: contain;
+        max-width: 100%
+    }
 
-	.projects {
-		width: 100%;
-		order: 2;
-		display: flex;
-		flex-wrap: wrap;
-	}
+    .logo-img-container{
+        max-width: 5%;
+        order: 1;
+        margin: 20px 0 10px 10px;
+    }
 
-	.projects-title {
-		text-align: center;
-		display: block;
-		margin: 0 auto 10px auto;
-	}
-	.project-title {
-		margin: 0px auto 0px auto;
-	}
+    .heading-container {
+        max-width:50%;
+        order:2;
+        text-align: right;
+        margin: 5px 10px;
+    }
 
-	.project {
-		display: block;
-		width: 75%;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
 
-	.project-img {
-		width: 100%;
-		margin: auto;
-	}
+    .profile {
+        width: 100%;
+        order: 1;
+        margin: 10px;
+    }
 
-	.project-link {
-		padding: 10px;
-	}
+    .bio {
+        margin: 0;
+        padding: 5px;
+    }
 
-	footer {
-		width: 100%;
-		order: 3;
-		font-size: 15px;
-	}
+    .profile-img {
+        margin: 10px auto;
+        max-width: 25%;
+        align-items: center;
+    }
+
+    .projects {
+        width: 100%;
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projects-title {
+        text-align: center;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .project-title {
+        margin: 0px auto 0px auto;
+    }
+
+    .project {
+        display: block;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .project-img-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .project-link {
+        padding: 10px;
+    }
+
+    footer {
+        width: 100%;
+        order: 3;
+        font-size: 15px;
+    }
 
 
 }
 
 @media screen and (min-width: 768px) {
-	.name, .alias {
-		font-size: 25px;
-		margin: 5px;
-	}
-	header {
-		display: flex;
-		justify-content:space-between;
-		width: 100%;
-		height: 20%;
-		order: 0;
-	}
 
-	.logo-img{
-		width: 10%;
-		height: 50px;
-		order: 1;
-		margin-top: 25px;
-	}
-	.heading-container {
-		max-width:50%;
-		order:2;
-		text-align: right;
-	}
-	body {
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 100%;
-		font-size: 30px;
-	}
+    .name,
+    .alias {
+        font-size: 25px;
+        margin: 5px;
+    }
 
-	.profile {
-		width: 100%;
-		order: 1;
-		display: flex;
-		justify-content: space-between;
-	}
+    header {
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+        height: 20%;
+        order: 0;
+    }
 
-	.bio {
-		max-width: 65%;
-		padding: 5px;
-		margin: 10px;
-	}
+    .logo-img{
+        object-fit: contain;
+        max-width: 100%
+    }
 
-	.profile-img {
-		margin: 10px;
-		width: 200px;
-		height: 200px;
-	}
+    .logo-img-container{
+        max-width: 5%;
+        order: 1;
+        margin: 30px 0 10px 10px;
+    }
 
-	.projects {
-		width: 100%;
-		order: 2;
-		display: flex;
-		flex-wrap: wrap;
-	}
+    .heading-container {
+        max-width: 50%;
+        order: 2;
+        text-align: right;
+        margin: 20px 10px 0 0;
+    }
 
-	.projects-title {
-		width: 100%;
-		margin: 5px auto 5px auto;
-		text-align: center;
-	}
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        font-size: 30px;
+    }
 
-	.project-img {
-		width: 225px;
-		margin: 0px;
-	}
+    .profile {
+        width: 100%;
+        order: 1;
+        display: flex;
+        justify-content: space-between;
+    }
 
-	.project-link {
-		padding: 10px;
-	}
+    .bio {
+        max-width: 80%;
+        padding: 5px;
+        margin: 10px;
+    }
 
-	footer {
-		width: 100%;
-		order: 3;
-	}
+    .profile-img {
+        margin: 10px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 
-	.project-title {
-		margin: 5px auto 5px auto;
-	}
+    .projects {
+        width: 100%;
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-	.project3{
-		order: 0;
-		width: 100%;
-		text-align: center;
-		margin: auto;
-	}
+    .projects-title {
+        width: 100%;
+        margin: 5px auto 5px auto;
+        text-align: center;
+    }
 
-	.project-3-img {
-		width: 75%;
-		margin: auto;
-	}
+    .project-link {
+        padding: 10px;
+    }
 
-	.project-1-img, .project-2-img {
-		margin-left: auto;
-		margin-right: auto;
-	}
+    footer {
+        width: 100%;
+        order: 3;
+    }
 
-	.project1, .project2 {
-		order: 1;
-		width: 50%;
-		height: auto;
-		margin: 0 auto 0 auto;
-		text-align: center;
-	}
+    .project-title {
+        margin: 5px auto 5px auto;
+    }
+
+    .project3{
+        order: 0;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .project-3-img {
+        width: 75%;
+        margin: auto;
+    }
+
+    .project-1-img, .project-2-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project1, .project2 {
+        order: 1;
+        width: 45%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
 
 
 
 }
 
 @media screen and (min-width: 992px) {
-	.name, .alias {
-		font-size: 25px;
-		margin: 5px;
-	}
-	header {
-		display: flex;
-		justify-content:space-between;
-		width: 100%;
-		height: 20%;
-		order: 0;
-	}
 
-	.logo-img{
-		width: 10%;
-		height: 50px;
-		order: 1;
-		margin-top: 25px;
-	}
-	.heading-container {
-		max-width:50%;
-		order:2;
-		text-align: right;
-	}
-	body {
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 100%;
-		font-size: 30px;
-	}
+    .name, 
+    .alias {
+        font-size: 25px;
+        margin: 5px;
+    }
 
-	.profile {
-		width: 100%;
-		order: 1;
-		display: flex;
-		justify-content: space-between;
-	}
+    header {
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+        height: 20%;
+        order: 0;
+    }
 
-	.bio {
-		max-width: 65%;
-		padding: 5px;
-		margin: 10px;
-	}
+    .logo-img{
+        object-fit: contain;
+        max-width: 100%
+    }
 
-	.profile-img {
-		margin: 10px;
-		width: 200px;
-		height: 200px;
-	}
+    .logo-img-container{
+        max-width: 5%;
+        order: 1;
+        margin: 20px 0 10px 10px;
+    }
 
-	.projects {
-		width: 100%;
-		order: 2;
-		display: flex;
-		flex-wrap: wrap;
-	}
+    .heading-container {
+        max-width: 50%;
+        order: 2;
+        text-align: right;
+        margin: 20px 10px 0 0;
+    }
 
-	.projects-title {
-		width: 100%;
-		margin: 5px auto 5px auto;
-		text-align: center;
-	}
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        font-size: 30px;
+    }
 
-	.project-img {
-		width: 225px;
-		margin: 0px auto 0px auto;
-	}
+    .profile {
+        width: 100%;
+        order: 1;
+        display: flex;
+        justify-content: space-between;
+    }
 
-	.project-link {
-		padding: 10px;
-	}
+    .bio {
+        max-width: 80%;
+        padding: 5px;
+        margin: 10px;
+    }
 
-	.project-title {
-		margin: 5px auto 5px auto;
-	}
+    .profile-img {
+        margin: 10px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 
-	.project {
-		width: 33%;
-		margin: 5px auto 5px auto;
-	}
+    .projects {
+        width: 100%;
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-	footer {
-			width: 100%;
-			order: 3;
-		}
+    .projects-title {
+        width: 100%;
+        margin: 5px auto 5px auto;
+        text-align: center;
+    }
+
+    .project-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-link {
+        padding: 10px;
+    }
+
+    .project-title {
+        margin: 5px auto;
+    }
+
+    .project {
+        width: 33%;
+        margin: 5px auto;
+    }
+
+    footer {
+            width: 100%;
+            order: 3;
+        }
 }
